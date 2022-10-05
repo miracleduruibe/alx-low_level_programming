@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * mul - multiplies two numbers
- * @a:first number
- * @b:second number
- * Return: returns result
+ * _isdigit - checks for a digit (0 through 9)
+ * @c: digit to be checked
+ * Return: 1 if c is a digit, otherwise 0
  */
-
-int mul(int a, int b)
+int _isdigit(int c)
 {
-	return (a * b);
+	if ((c >= 48) && (c <= 57))
+		return (1);
+	else
+		return (0);
 }
